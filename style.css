@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-family: "Anek Devanagari", sans-serif;
+    user-select: none;
   
 }
 
@@ -19,20 +20,103 @@ body{
 
 
 .home{
-   
+    
     height: 100vh;
     width: 100%;
 
 }
 
 .navbar{
-    
     height: 6%;
     padding: 2%;
+    display: flex;
 
 }
 
 .intro{
-    
     height: 88%;
+    display: flex;
+    
 }
+
+.info{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items: left;
+    justify-content:center;
+    font-size: 250%;
+    padding-left: 5%;
+
+
+}
+
+.image{
+    border: 2px solid aqua;
+    height: 100%;
+    width: 50%;
+    border-radius: 1000px;
+    scale: 0.75;
+    
+}
+
+.explore{
+
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    background-color:#f0f8ff00;
+    border: 2px solid aqua;
+    border-radius: 12px ;
+    font-size: 50%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+    
+
+}
+
+.explore:hover{
+    background-color: aqua;
+    color: white;
+    scale: 1.1;
+    
+
+
+}
+
+.name{
+    margin-top: 10px;
+    color: aqua;
+}
+
+.infotext{
+    height: 50px;
+}
+
+.portfolio{
+    width: 25%;
+    
+}
+.menuitem{
+    display: flex;
+    width: 75%;
+    justify-content: end;
+    align-items: center;
+    
+    gap: 5%;
+    list-style: none;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+.menu:hover{
+    color: aqua;
+    scale: 1.1;
+}
+
