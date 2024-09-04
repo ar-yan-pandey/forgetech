@@ -27,13 +27,28 @@ body{
     display: flex;
     height: 100vh;
     width: 100%;
+    
 
+
+}
+
+#home{
+    background-image: url(/images/homebg.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .navbar{
     height: 4%;
     width: 96%;
-    background-color: rgba(14, 14, 14,0.5);
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.13);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 2%;
     display: flex;
     position: fixed;
@@ -175,11 +190,220 @@ hr{
     height: 100%;
     width: 50%;
     /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+
 
 }
 
 #aboutme{
 
     flex-direction: column;
+}
+
+#skills{
+
+    flex-direction: column;
+}
+
+
+.details{
+    width: 90%;
+    display: flex;
+    font-size: 200%;
+}
+
+.skillbox{
+    /* border: 2px solid green; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillcard{
+
+    height: 200px;
+    width:200px ;
+    /* border: 2px solid red; */
+    background-color: rgb(41, 41, 41);
+    border-radius: 30px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.skillname{
+
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skilllogo{
+    height: 70%;
+    width: auto;
+}
+
+
+
+.pbar{
+    border: 1px solid white;
+    width: 75%;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.progress{
+    height: 100%;
+    background-color: aqua;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#python{
+    width: 80%;
+}
+
+#html{
+    width: 95%;
+
+}
+
+#css{
+    width: 75%;
+
+}
+
+#js{
+    width: 50%;
+}
+
+#cplus{
+    width: 75%;
+}
+
+#django{
+    width: 55%;
+}
+
+#clang{
+    width: 70%;
+}
+
+#java{
+    width: 45%;
+}
+
+.skillcard:hover{
+
+    scale: 1.1;
+    transition-duration: 0.3s;
+
+}
+
+.gallerybox{
+    /* border: 2px solid green; */
+    height: auto;
+    width: auto;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+
+}
+
+#gallery{
+    flex-direction: column;
+}
+
+.galleryimg{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.galleryimg:hover{
+    scale: 1.1;
+    transition-duration: 0.5s;
+}
+
+.contactbox{
+
+    height: 60vh;
+    width: 90%;
+    /* border: 2px solid red; */
+    display: flex;
+
+}
+
+.contactdetails{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.maps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid blue; */
+    
+}
+
+#contact{
+    flex-direction: column;
+}
+
+.mapbox{
+    height: 75%;
+    width: 75%;
+    border-radius: 25px;
+}
+
+.contactbutton{
+    width: 270px;
+    height: 40px;
+    background-color:#f0f8ff00;
+    border: 2px solid aqua;
+    border-radius: 12px ;
+    font-size: 50%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 15px;
+    
+}
+
+.contactimage{
+    height: 80%;
+}
+
+.contacttext{
+    margin-top: 2%;
+    margin-left: 8%;
+    font-size: 250%;
+}
+
+.contactbutton:hover{
+    scale: 1.1;
+    transition-duration: 0.5s;
 }
 
